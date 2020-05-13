@@ -5,6 +5,9 @@
   <%= csrf_meta_tag %>
   <%= csp_meta_tag if RailsEmailPreview.rails_supports_csp_nonce? %>
   <%= favicon_link_tag 'rails_email_preview/favicon.png' %>
+  <style>
+    <%= raw render(file: "#{RailsEmailPreview::Engine.root}/app/assets/stylesheets/application.css") %>
+  </style>
   <%= yield(:head) %>
 </head>
 <body>
