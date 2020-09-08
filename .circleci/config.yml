@@ -13,5 +13,5 @@ workflows:
             - gem/test
           filters:
             branches:
-              only: master
-          packagecloud-repo: goldstar/production
+              only: packagecloud
+          packagecloud-repo: goldstar/gstest
